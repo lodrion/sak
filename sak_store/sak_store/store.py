@@ -20,7 +20,7 @@ class ReadStore(abc.ABC, Generic[K, V]):
 
     def get(self, key: K) -> Optional[V]:
         """Get a single key"""
-        return mget([key])[0]
+        return self.mget([key])[0]
 
 
 class WriteStore(abc.ABC, Generic[K, V]):
