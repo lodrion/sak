@@ -2,7 +2,7 @@ from setuptools import find_packages, setup
 
 
 setup(
-    name='sak-cache',
+    name='sak-store',
     version='0.0.1',
     packages=find_packages(),
     install_requires=[
